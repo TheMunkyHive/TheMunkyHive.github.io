@@ -6,7 +6,7 @@
 /* General Styles */
 body {
     font-family: Verdana,sans-serif;
-    font-size: 15px;
+    font-size: 0.96em;
 }
 
 li {
@@ -53,7 +53,7 @@ a:link:hover, a:visited:hover {
 }
 
 .nav-links>.link-label {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .link-label>h4 {
@@ -63,6 +63,7 @@ a:link:hover, a:visited:hover {
 
 li.menu-link>a.link {
     color: #fff;
+    font-weight: bold;
 }
 
 /* Page Title */
@@ -75,22 +76,20 @@ li.menu-link>a.link {
     text-align: center;
 }
 
+.container-title>.title>h1 {
+    font-size: 1.65em;
+}
+
 /* Main */
 
 .container-main-content {
     margin: 0 auto;
     max-width: 1000px;
     height: 100%;
-    padding: 20px;
+    padding: 30px;
 }
 
-.content-section {
-    padding-bottom: 20px;
-}
-
-.content-header {
-    padding-bottom: 10px;
-}
+/* ToC Link Section */
 
 ol.toc-list {
     padding-left: 20px;
@@ -100,6 +99,14 @@ ol.toc-list {
 
 li.toc {
     list-style-type: decimal;
+}
+
+.content-header {
+    padding-bottom: 15px;
+}
+
+.content-section {
+    padding-bottom: 20px;
 }
 
 /* Footer */
