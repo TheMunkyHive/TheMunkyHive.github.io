@@ -12,13 +12,14 @@ body {
 li {
     list-style-type: none;
 }
-a:link, a:visited {
+a:link, a:visited, a:active {
     text-decoration: none;
-    color: rgb(64, 72, 175);
+    color: #2d545e;
 }
 
-a:link:hover, a:visited:hover {
-    color: rgb(146, 175, 241);
+a:link:hover, a:visited:hover, a:active:hover {
+    background-color: #2d545e;
+    color: #fff;
 }
 
 /* Debugging */
@@ -27,19 +28,13 @@ a:link:hover, a:visited:hover {
     border-bottom: 1px solid lightsteelblue;
 }
 
-/* Header */
-
-.container-header {
-
-}
-
 /* Header - Navigation */
 
 .container-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
+    height: 80px;
     background-color: #2d545e;
     color: #fff;
 }
@@ -52,16 +47,8 @@ a:link:hover, a:visited:hover {
     margin-right: 20px;
 }
 
-.nav-links>.link-label {
-    /* margin-bottom: 10px; */
-}
 
-.link-label>h4 {
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-li.menu-link>a.link {
+li.menu-link a.link {
     color: #fff;
     font-weight: bold;
 }
@@ -99,6 +86,12 @@ ol.toc-list {
 
 li.toc {
     list-style-type: decimal;
+    line-height: 1.3em;
+}
+
+li.toc a.toc-link {
+        font-weight: bold;
+        padding: 2.5px 5px;
 }
 
 .content-header {
@@ -123,3 +116,11 @@ li.toc {
 .footer-branding {
     padding: 25px;
 }
+
+/*  Hides the navigation links section
+    '+' Selects the nearest sibling, must share same parent
+    '~' Selects all following sibling, must share the same parent
+
+.nav-branding:hover ~ .nav-links {
+    display: none;
+} */
