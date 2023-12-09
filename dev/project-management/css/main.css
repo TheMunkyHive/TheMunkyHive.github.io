@@ -23,13 +23,14 @@ ul, ol {
 li {
     list-style-type: none;
 }
-a, a:link, a:visited, a:active {
+a:link, a:visited, a:active {
     text-decoration: none;
+    background-color: #fff;
     color: #2d545e;
 }
 
-a, a:link:hover, a:visited:hover, a:active:hover {
-    background-color: #2d545e;
+a:link:hover, a:visited:hover, a:active:hover {
+    background-color: #2f6f7f;
     color: #fff;
 }
 
@@ -61,6 +62,7 @@ a, a:link:hover, a:visited:hover, a:active:hover {
 
 li.menu-link a.link {
     color: #fff;
+    background-color: #2d545e;
     font-weight: bold;
 }
 
@@ -95,12 +97,10 @@ ol.toc-list {
 
 li.toc {
     list-style-type: decimal;
-    line-height: 1.3em;
 }
 
 li.toc a.toc-link {
         font-weight: bold;
-        padding: 2.5px 5px;
 }
 
 .content-header {
@@ -134,10 +134,14 @@ li.toc a.toc-link {
     display: none;
 } */
 
-@media(min-width: 768px) {
-    a, a:link:hover, a:visited:hover, a:active:hover {
-        background-color: inherit;
-        color: inherit;
+@media(max-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+
+    a:link:hover, a:visited:hover, a:active:hover {
+        background-color: #fff;
+        color: #2f6f7f;
     }
     
 }
