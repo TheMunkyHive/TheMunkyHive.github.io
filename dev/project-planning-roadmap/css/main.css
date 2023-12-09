@@ -27,6 +27,7 @@ a:link, a:visited, a:active {
     text-decoration: none;
     background-color: #fff;
     color: #2d545e;
+    display: inline-table; /* prevents overlapping */
 }
 
 a:link:hover, a:visited:hover, a:active:hover {
