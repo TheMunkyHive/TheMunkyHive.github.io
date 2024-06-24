@@ -31,8 +31,8 @@ a:link, a:visited, a:active {
 }
 
 a:link:hover, a:visited:hover, a:active:hover {
-    background-color: #2f6f7f;
-    color: #fff;
+    background-color: #fff;
+    color: #2f6f7f;
 }
 
 /* Debugging */
@@ -139,10 +139,5 @@ li.toc a.toc-link {
     body {
         font-size: 1em;
     }
-
-    a:link:hover, a:visited:hover, a:active:hover {
-        background-color: #fff;
-        color: #2f6f7f;
-    }
-    
+ 
 }
