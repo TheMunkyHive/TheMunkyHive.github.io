@@ -1,4 +1,4 @@
-let header1 = document.getElementById('preperations');
+let header1 = document.getElementById('preparations');
 header1.addEventListener('click', () => {
     header1.classList.toggle('success');
 })

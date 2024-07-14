@@ -108,6 +108,14 @@ li.menu-link a.link {
     padding: 30px;
 }
 
+.content-section {
+    margin-bottom: 20px;
+}
+
+.content-section:last-child {
+    margin-bottom: 0;
+}
+
 /* ToC Link Section */
 
 ol.toc-list {
